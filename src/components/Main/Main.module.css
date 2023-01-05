@@ -1,0 +1,61 @@
+
+.tagline{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.heading {
+    font-size:60px;
+    font-weight: 600;
+    animation: spaceX-heading 2s ease-out forwards;
+}
+
+.tag{
+  font-size: 32px;
+  font-weight: 400;
+  animation: spaceX-tagline 2s ease-out forwards;
+}
+
+.banner{
+    border-radius: 20px;
+    animation: spaceX-banner 2s ease-out forwards;
+}
+
+@keyframes spaceX-heading {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0rem);
+    }
+  }
+
+@keyframes spaceX-tagline {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(-3rem);
+    }
+  }
+
+@keyframes spaceX-banner {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0rem);
+    }
+  }

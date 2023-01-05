@@ -10,9 +10,8 @@ html {
 }
 
 body{
-  margin: 2rem;
-  padding: 0px;
-  
+  padding: 0;
+  margin: 0;
   background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
 }
@@ -20,22 +19,32 @@ body{
 .main{
   width:100vw;
   height:100vh;
-  margin-top: 5rem;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   opacity: 0.8;
   z-index: 1;
 }
 
 .search{
   width: 100vw;
-  height: 100vh;
+  min-height: 70vh;
+  height: 100%;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #080707;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   opacity: 0.8;
   z-index: 1;
+  padding: 2% 0%;
+  color:#ffffff
 }
 
 .data-grid {
