@@ -2,13 +2,48 @@
 
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 html {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
-body {
-  margin: 0;
-  background-color: #3f3f3f;
+body{
+  margin: 2rem;
+  padding: 0px;
+  
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main{
+  width:100vw;
+  height:100vh;
+  margin-top: 5rem;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.search{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.data-grid {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  z-index: 1;
 }
