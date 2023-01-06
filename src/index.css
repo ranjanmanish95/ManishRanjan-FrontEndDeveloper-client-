@@ -47,12 +47,21 @@ body{
   color:#ffffff
 }
 
-.data-grid {
+.launch{
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.8;
+  background-color: #7f7575;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.8;
   z-index: 1;
+  padding: 2% 0%;
+  color:#ffffff
 }

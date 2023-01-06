@@ -5,7 +5,7 @@ const SearchForm = ()=>{
     return(
     <Fragment>
         <div className='search'>
-            <h1>Search SpaceX capsules by Status, Original Launch and Type</h1>
+            <h1 className={classes.heading}>Search SpaceX capsules by Status, Original Launch and Type</h1>
             <div className={classes.searchinput}>
              <input placeholder="Enter Status here"/>
              <input placeholder="Enter Original Launch here"/>

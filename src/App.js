@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import Header from './components/Layout/Header';
 import Main from './components/Main/Main'
 import SearchForm from './components/Search/SearchForm';
-import DataGrid from './components/DataGrid/datagrid';
+import Launch from './components/Launch/Launch';
 import Footer from './components/Layout/Footer';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <Header/>
       <Main/>
       <SearchForm/>
-      <DataGrid/>
+      <Launch/>
       <Footer/>
      </Fragment>
   );
