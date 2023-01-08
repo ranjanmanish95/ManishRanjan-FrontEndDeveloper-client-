@@ -65,3 +65,24 @@ body{
   padding: 2% 0%;
   color:#ffffff
 }
+
+.inner-main{
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+}
+
+.switch-data{
+  position: fixed;
+  top: 20%;
+  left: 42%;
+  background-color: rgb(5, 30, 170);
+  color: #fff;
+  border: none;
+  text-align: center;
+  width: 18rem;
+  height: 3rem;
+  border-radius: 20px;
+  z-index: 100;
+}

@@ -22,14 +22,14 @@
   
   .header li {
     margin: 0 1rem;
-    width: 6rem;
+    width: 5rem;
   }
   
   .header a {
     color: white;
     text-decoration: none;
     background-color: #19191a;
-    width: 5rem;
+    width: 7rem;
     padding: 0;
     border: none;
   }

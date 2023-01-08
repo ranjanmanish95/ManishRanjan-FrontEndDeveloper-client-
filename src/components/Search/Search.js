@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import '../../index.css';
 import classes from './SearchForm.module.css';
-const SearchForm = ()=>{
+const Search = ()=>{
     return(
     <Fragment>
         <div className='search'>
@@ -17,4 +17,4 @@ const SearchForm = ()=>{
     );
 }
 
-export default SearchForm;
+export default Search;
