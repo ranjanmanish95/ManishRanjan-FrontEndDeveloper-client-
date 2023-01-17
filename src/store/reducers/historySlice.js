@@ -1,36 +1,36 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-export const getPayloadData = createAsyncThunk('payload/getData', async (arg,{
+export const getHistoryData = createAsyncThunk('history/getData', async (arg,{
   rejectWithValue
 })=>{
   try{
-  const {data} = await axios.get('https://api.spacexdata.com/v3/payloads');
+  const {data} = await axios.get('http://localhost:8001/history');
   return data;
   } catch(error){
     rejectWithValue(error.response.data);
   }
 })
 
-const payloadSlice = createSlice({
-  name: 'payload',
+const historySlice = createSlice({
+  name: 'history',
   initialState: { 
-    spaceXPayload: [], 
+    spaceXHistory: [], 
     isSuccess: false,
     message: '',
     loading: false
   },
    reducers: {},
    extraReducers:{
-    [getPayloadData.pending]: (state, {payload}) =>{
+    [getHistoryData.pending]: (state, {payload}) =>{
       state.loading = true;
     },
-    [getPayloadData.fulfilled]: (state, {payload}) =>{
+    [getHistoryData.fulfilled]: (state, {payload}) =>{
       state.loading = true;
-      state.spaceXPayload = payload;
+      state.spaceXHistory = payload;
       state.isSuccess = true;
     },
-    [getPayloadData.pending]: (state, {payload}) =>{
+    [getHistoryData.pending]: (state, {payload}) =>{
       state.message = payload;
       state.loading = false;
       state.isSuccess = false;
@@ -39,4 +39,6 @@ const payloadSlice = createSlice({
   },
 );
 
-export default payloadSlice;
+// export const historyActions = historySlice.actions;
+
+export default historySlice;

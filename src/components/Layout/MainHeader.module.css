@@ -1,9 +1,10 @@
 
 .header {
-    width: 100%;
+    width: 150%;
     height: 5rem;
     background-color: #0f0f0f;
-    padding: 0 0%;
+    padding-left: 0px;
+    padding-right: 2rem;
   }
   
   .header nav {
@@ -15,14 +16,15 @@
     list-style: none;
     display: flex;
     padding: 0;
-    margin: 0 0;
+    margin: 0;
     align-items: center;
     justify-content: flex-end;
   }
   
   .header li {
     margin: 0 1rem;
-    width: 5rem;
+    width: 7rem;
+    overflow: hidden;
   }
   
   .header a {

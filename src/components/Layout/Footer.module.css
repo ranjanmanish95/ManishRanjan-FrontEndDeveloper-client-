@@ -2,7 +2,6 @@
     width: 100vw;
     min-height: 50vh;
     height: 100%;
-    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #0c0c0c;
@@ -16,8 +15,8 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 5rem;
-    padding: 0 8%;
+    height: 3rem;
+    padding: 5% 8%;
     font-size: 48px;
   }
 
@@ -35,5 +34,5 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 5rem;
+    height: 3rem;
   }

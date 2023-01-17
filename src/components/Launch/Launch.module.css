@@ -1,5 +1,13 @@
+
 .heading{
-    animation: spaceX-heading 2s ease-out forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    min-height: 100%;
+    margin-top: 5%;
+    color: #fff;
+    animation: spaceX-launchbutton 2s ease-out forwards;
 }
 
 .launchbuttondiv{

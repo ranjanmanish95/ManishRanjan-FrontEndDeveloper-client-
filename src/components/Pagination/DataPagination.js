@@ -2,9 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
 
-
-
-const Pagination = ({dataPerPage, totalData, paginate})=>{
+const DataPagination = ({dataPerPage, totalData, paginate})=>{
     const pageNumber = [];
     for (let i=0; i<= Math.ceil(totalData/dataPerPage); i++){
         pageNumber.push(i);
@@ -29,4 +27,4 @@ const isHistory = queryParams.get('tab') === 'History';
  )
 }
 
-export default Pagination;
+export default DataPagination;

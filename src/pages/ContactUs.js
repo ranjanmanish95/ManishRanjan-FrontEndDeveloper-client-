@@ -1,10 +1,12 @@
-import { Fragment } from "react";
-const ContactUs = ()=>{
+import ContactUs from "../components/ContactUs/ContactUs";
+
+
+const ContactPage = ()=>{
     return(
-        <Fragment>
-        <h1 style={{marginTop: '20rem'}}>This is Contact Us Page</h1>
-        </Fragment>
+        <div className="contact">
+          <ContactUs/>
+        </div>
     )
 }
 
-export default ContactUs;
+export default ContactPage;

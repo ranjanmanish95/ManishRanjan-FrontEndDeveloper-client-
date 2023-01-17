@@ -2,9 +2,9 @@ import classes from './PayloadList.module.css';
 import Card from '../UI/Card';
 import PayloadItem from './PayloadItem/PayloadItem';
 import {useEffect, useState} from 'react';
-import {getPayloadData} from '../store/reducers/payloadSlice';
+import {getPayloadData} from '../../store/reducers/payloadSlice';
 import { useSelector, useDispatch } from 'react-redux';
-import Pagination from '../Pagination/Pagination'
+import Pagination from '../Pagination/DataPagination';
 
   const PayloadList = ()=>{
 
@@ -16,7 +16,7 @@ import Pagination from '../Pagination/Pagination'
 
     useEffect(()=>{
      dispatch(getPayloadData());
-    },[])
+    },[dispatch])
 
     //Change Page 
     const paginate = (pageNumber)=> setCurrentPage(pageNumber);

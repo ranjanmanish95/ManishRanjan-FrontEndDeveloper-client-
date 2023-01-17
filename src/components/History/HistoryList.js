@@ -3,8 +3,8 @@ import Card from '../UI/Card';
 import HistoryItem from './HistoryItem/HistoryItem';
 import { useSelector, useDispatch } from 'react-redux';
 import {useEffect, useState} from 'react';
-import {getHistoryData} from '../store/reducers/historySlice';
-import Pagination from '../Pagination/Pagination';
+import {getHistoryData} from '../../store/reducers/historySlice';
+import Pagination from '../Pagination/DataPagination';
 
   const HistoryList = ()=>{
     
@@ -16,7 +16,7 @@ import Pagination from '../Pagination/Pagination';
     
     useEffect(()=>{
      dispatch(getHistoryData());
-    },[]);
+    },[dispatch]);
 
     //Change Page 
     const paginate = (pageNumber)=> setCurrentPage(pageNumber);

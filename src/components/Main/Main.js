@@ -10,7 +10,7 @@ const Main = ()=>{
           <h1 className={classes.heading}>SpaceX </h1>
           <p className={classes.tag}>Turn your space dream into reality</p>
           </div>
-          <img src={banner} alt='banner image' className={classes.banner}/>
+          <img src={banner} className={classes.banner}/>
         </div>
         </Fragment>
     )

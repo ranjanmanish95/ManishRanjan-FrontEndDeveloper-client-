@@ -1,0 +1,24 @@
+.list {
+  width: 90%;
+  max-width: 43rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: white;
+  margin: 3rem auto;
+  border: 1px solid rgb(230, 226, 226);
+  animation: contact-appear 1s ease-out forwards;
+  }
+
+  @keyframes contact-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0rem);
+    }
+  }
+
+  

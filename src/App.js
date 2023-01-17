@@ -1,14 +1,12 @@
 import { Fragment } from 'react';
-import { useLocation } from 'react-router-dom';
-import {Switch, Route, exact} from 'react-router-dom';
+import {Switch, Route} from 'react-router-dom';
 import Header from './components/Layout/Header';
 import Landing from './pages/LandingPage';
 import Launch from './components/Launch/Launch';
 import Data from './pages/Data';
 import ContactUs from './pages/ContactUs';
-import Login from './pages/Login';
 import Footer from './components/Layout/Footer';
-
+import Capsules from './pages/Capsules';
 
 function App() {
 
@@ -19,6 +17,9 @@ function App() {
        <Route exact path='/'>
        <Landing/>
       </Route>
+      <Route  path='/capsules'>
+       <Capsules/>
+      </Route>
       <Route exact path='/launches'>
        <Launch/>
       </Route>
@@ -28,9 +29,9 @@ function App() {
       <Route  path='/contactus'>
        <ContactUs/>
       </Route>
-      <Route path='/login'>
+      {/* <Route path='/login'>
         <Login/>
-      </Route>
+      </Route> */}
       </Switch>
       <Footer/>
      </Fragment>

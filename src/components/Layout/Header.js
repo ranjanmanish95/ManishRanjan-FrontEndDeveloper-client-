@@ -7,7 +7,7 @@ const Header = props =>{
  return(
     <Fragment>
         <header className={classes.header}>
-        <h1 style={{width:'100%', paddingLeft: '6%'}}>SpaceX</h1>
+        <h1 style={{width:'50%', paddingLeft: '6%', overflow: 'hidden'}}>SpaceX</h1>
         <MainHeader/>
         </header>
     </Fragment>

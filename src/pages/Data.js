@@ -14,7 +14,7 @@ const Data = ()=>{
     const historyData = queryParams.get('tab') === 'History';
 
     const switchDataHandler = ()=>{
-     history.push('/login?tab=' + (payloadData ? 'History' : 'Payload'));
+     history.push('/data?tab=' + (payloadData ? 'History' : 'Payload'));
     }
 
     return(
