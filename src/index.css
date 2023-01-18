@@ -79,6 +79,18 @@ body{
   background-color: rgb(41, 41, 41);
 }
 
+.rockets{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  margin-top: 3rem;
+  background-color: rgb(41, 41, 41);
+}
+
 .form-control {
   margin-bottom: 1rem;
 }
