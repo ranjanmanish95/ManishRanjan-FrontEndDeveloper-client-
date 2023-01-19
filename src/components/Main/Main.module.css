@@ -1,3 +1,15 @@
+.main{
+  width:100vw;
+  height:100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0.8;
+  z-index: 1;
+}
 
 .tagline{
     display: flex;
@@ -59,4 +71,33 @@
       opacity: 1;
       transform: translateY(0rem);
     }
+  }
+
+  @media screen and (max-width: 991px) and (min-width: 368px) {
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .tagline{
+      justify-content: center;
+    }
+
+    .heading{
+      font-size: 36px;
+    }
+
+    .tag{
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    .banner{
+      width: 24rem;
+      height: 16rem;
+    }
+
   }

@@ -19,19 +19,19 @@ const NewHeader = ()=>{
         <>
     <Navbar bg="dark" variant='dark' expand="lg">
       <Container>
-        <Navbar.Brand as={Link} to="/" style={{fontSize: '32px'}}>SpaceX</Navbar.Brand>
+        <Navbar.Brand className="me-5" as={Link} to="/" style={{fontSize: '32px'}}>SpaceX</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto mt-2">
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/capsules">Capsules</Nav.Link>
-            <Nav.Link as={Link} to="/launches">Launch</Nav.Link>
-            <Nav.Link as={Link} to="/contactus">Contact Us</Nav.Link>
-            <Nav.Link as={Link} to="/data">Legacy Data</Nav.Link>
-            <Nav.Link as={Link} onClick={handleLoginShow}>
+          <Nav className="ms-auto mt-2">
+            <Nav.Link className="ms-2" as={Link} to="/">Home</Nav.Link>
+            <Nav.Link className="ms-2" as={Link} to="/capsules">Capsules</Nav.Link>
+            <Nav.Link className="ms-2" as={Link} to="/launches">Launch</Nav.Link>
+            <Nav.Link className="ms-2" as={Link} to="/contactus">Contact Us</Nav.Link>
+            <Nav.Link className="ms-2" as={Link} to="/data">Legacy Data</Nav.Link>
+            <Nav.Link className="ms-2" as={Link} onClick={handleLoginShow}>
                 Login
             </Nav.Link>
-            <Nav.Link as={Link} onClick={handleSignupShow}>
+            <Nav.Link className="ms-2" as={Link} onClick={handleSignupShow}>
                 Register
             </Nav.Link>
           </Nav>

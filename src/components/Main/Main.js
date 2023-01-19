@@ -5,7 +5,7 @@ import classes from './Main.module.css';
 const Main = ()=>{
     return(
         <Fragment>
-         <div className='main'>
+         <div className={classes.main}>
           <div className={classes.tagline}> 
           <h1 className={classes.heading}>SpaceX </h1>
           <p className={classes.tag}>Turn your space dream into reality</p>

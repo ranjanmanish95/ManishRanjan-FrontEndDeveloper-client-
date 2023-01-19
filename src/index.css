@@ -16,18 +16,7 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
-.main{
-  width:100vw;
-  height:100vh;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  opacity: 0.8;
-  z-index: 1;
-}
+
 
 .launch{
   width: 100vw;
@@ -85,7 +74,7 @@ body{
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   height: 100%;
   margin-top: 3rem;
   background-color: rgb(41, 41, 41);

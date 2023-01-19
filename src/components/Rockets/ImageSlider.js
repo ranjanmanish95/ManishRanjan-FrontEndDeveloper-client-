@@ -1,15 +1,10 @@
 import {useState} from 'react';
 import {  BsFillArrowLeftCircleFill } from "react-icons/bs";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import classes from './ImageSlider.module.css';
+
 const ImageSlider = ({slides}) =>{
     const [currentIndex, setCurrentIndex] = useState(0);
-    
-    const containerStyles = {
-        width: '600px',
-        height: '380px',
-        margin: '0 auto',
-        paddingTop: '2rem'
-    }
 
     const sliderStyles = {
         height: '85%',
@@ -86,7 +81,7 @@ const ImageSlider = ({slides}) =>{
 
     return(
         <>
-       <div style={containerStyles}>
+       <div className={classes.containerStyles}>
        <div style={sliderStyles}>
         <div style={leftArrowStyles} onClick={goToPrevious}><BsFillArrowLeftCircleFill/></div>
         <div style={rightArrowStyles} onClick={goToNext}><BsFillArrowRightCircleFill/></div>

@@ -11,7 +11,7 @@ const Rockets = ()=>{
     ]
 return(
     <div className='rockets'>
-      <h1 style={{color:'#fff' , overflow: 'hidden'}}>Check our Rockets</h1>
+      <h1 style={{color:'#fff' , overflow: 'hidden', marginTop: '2rem'}}>Check our Rockets</h1>
        <ImageSlider slides={slides}/>
     </div>
  )
