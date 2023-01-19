@@ -1,7 +1,7 @@
 import Capsules from "../components/Capsules/Capsules";
 const CapsulesPage = ()=>{
     return(
-        <div className="contact">
+        <div className="launch">
         <Capsules/>
         </div>
     )

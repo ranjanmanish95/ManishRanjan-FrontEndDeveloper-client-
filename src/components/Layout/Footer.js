@@ -47,7 +47,7 @@ const footer = ()=>{
              </ul>
            </div>
            <hr/>
-           <i className={classes.copyright}>CopyRight BrainStorm Force. All rights reserved</i>
+           <i className={classes.copyright}>CopyRight ranjanmanish95.in. All rights reserved</i>
         </div>
     </Fragment>
     )

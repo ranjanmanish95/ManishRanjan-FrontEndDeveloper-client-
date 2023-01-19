@@ -1,18 +1,17 @@
 import { Fragment } from 'react';
 import {Switch, Route} from 'react-router-dom';
-import Header from './components/Layout/Header';
 import Landing from './pages/LandingPage';
 import Launch from './components/Launch/Launch';
 import Data from './pages/Data';
 import ContactUs from './pages/ContactUs';
 import Footer from './components/Layout/Footer';
 import Capsules from './pages/Capsules';
-
+import Header from './components/Layout/Header';
 function App() {
 
   return (
      <Fragment>
-       <Header/>
+      <Header/>
        <Switch>
        <Route exact path='/'>
        <Landing/>
@@ -29,12 +28,9 @@ function App() {
       <Route  path='/contactus'>
        <ContactUs/>
       </Route>
-      {/* <Route path='/login'>
-        <Login/>
-      </Route> */}
       </Switch>
       <Footer/>
-     </Fragment>
+     </Fragment> 
   );
 }
 

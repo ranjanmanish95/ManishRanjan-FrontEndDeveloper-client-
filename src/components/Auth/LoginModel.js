@@ -34,6 +34,28 @@ const LoginModal = (props) => {
     return;
   }
 
+  let data =  { 
+    email: enteredEmail, 
+    password: enteredPassword, 
+  };
+
+  fetch('http://localhost:8001/users/login',{
+    method: 'POST',
+    headers: {
+      'Accept' : 'application/json',
+      'Content-Type' : 'application/json'
+    },
+    body: JSON.stringify(data),
+  })
+  .then((res)=>{
+   return res.json();
+  })
+  .then(data=>{
+    // console.log(data.token);
+    localStorage.setItem('loginToken', data.token);
+    console.log(localStorage.getItem('loginToken'));
+  })
+
   emailReset();
   passwordReset();
   })

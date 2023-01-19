@@ -7,7 +7,6 @@ const CapsulePagination = ({dataPerPage, totalData, paginate, query})=>{
         pageNumber.push(i);
 }
 
-
  return (
     <nav>
         <ul className='pagination'>

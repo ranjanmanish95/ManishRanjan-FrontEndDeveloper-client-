@@ -3,7 +3,7 @@ import ContactUs from "../components/ContactUs/ContactUs";
 
 const ContactPage = ()=>{
     return(
-        <div className="contact">
+        <div className="launch">
           <ContactUs/>
         </div>
     )

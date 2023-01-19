@@ -14,7 +14,11 @@ const Data = ()=>{
     const historyData = queryParams.get('tab') === 'History';
 
     const switchDataHandler = ()=>{
-     history.push('/data?tab=' + (payloadData ? 'History' : 'Payload'));
+        if(localStorage.getItem('loginToken')){
+            history.push('/data?tab=' + (payloadData ? 'History' : 'Payload'));
+        } else{
+            alert('Login to navigate to history and payload data')
+        }
     }
 
     return(

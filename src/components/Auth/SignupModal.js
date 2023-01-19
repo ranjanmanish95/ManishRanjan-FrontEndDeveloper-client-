@@ -42,6 +42,28 @@ const SignupModal = (props) => {
   if(!enteredEmailIsValid && !enteredPasswordIsValid && !enteredCompanyIsValid){
     return;
   }
+  let data = 
+  { 
+    email: enteredEmail, 
+    password: enteredPassword, 
+    company: enteredCompany
+  };
+
+  fetch('http://localhost:8001/users',{
+    method: 'POST',
+    headers: {
+      'Accept' : 'application/json',
+      'Content-Type' : 'application/json'
+    },
+    body: JSON.stringify(data),
+  })
+  .then((res)=>{
+    if(res.status === 201){
+    alert('User is saved');
+    } else {
+      alert ('User already exists');
+    }
+  })
 
   emailReset();
   passwordReset();

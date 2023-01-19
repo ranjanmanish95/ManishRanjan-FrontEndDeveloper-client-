@@ -31,7 +31,7 @@ const CapsuleList = (props)=>{
     const currentData = capsuleData.slice(indexOfFirstData,indexOfLastData-1);
 
     return (
-     <>
+      <>
        <input 
          type='text' 
          placeholder="Search your capsules by status"
@@ -47,7 +47,7 @@ const CapsuleList = (props)=>{
           </Card>
           <Pagination dataPerPage={dataPerPage} totalData={capsuleData.length} paginate={paginate} query={query}/> 
         </section>
-     </>
+        </>
     )
   };
   export default CapsuleList;
