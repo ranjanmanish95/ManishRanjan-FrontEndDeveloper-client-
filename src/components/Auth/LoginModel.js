@@ -70,10 +70,11 @@ const LoginModal = (props) => {
              <Modal.Title>Login</Modal.Title>
            </Modal.Header>
            <Modal.Body>
-        <form onSubmit={onSubmitHandler}>
+        <form name='login-form' onSubmit={onSubmitHandler}>
         <div className={emailInputClasses} style={{border: 'none'}}>
           <label htmlFor='email'>Email</label>
           <input 
+          name='email'
           type='email' 
           id='email' 
           onChange={emailChangeHandler}  

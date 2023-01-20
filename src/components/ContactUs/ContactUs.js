@@ -51,6 +51,31 @@ const ContactUs = (props) => {
     return;
   }
 
+  let data =  {
+    name: enteredName, 
+    email: enteredEmail,
+    company: enteredCompany, 
+    details: enteredDescription, 
+  };
+
+  fetch('http://localhost:8001/contact',{
+    method: 'POST',
+    headers: {
+      'Accept' : 'application/json',
+      'Content-Type' : 'application/json'
+    },
+    body: JSON.stringify(data),
+  })
+  .then((res)=>{
+   return res.json();
+  })
+  .then(data=>{
+     alert(data.message);
+  })
+  .catch(e=>{
+    alert(e);
+  })
+
   nameReset();
   emailReset();
   companyReset();
@@ -66,7 +91,7 @@ const ContactUs = (props) => {
       <div className={classes.list}>
       <form onSubmit={onSubmitHandler}>
         <div className={nameInputClasses} style={{border: 'none'}}>
-          <label htmlFor='name'>Your Name</label>
+          <label htmlFor='name'>Name</label>
           <input 
           type='text' 
           id='name' 
@@ -78,7 +103,8 @@ const ContactUs = (props) => {
         </div>
         <div className={emailInputClasses} style={{border: 'none'}}>
           <label htmlFor='email'>Email</label>
-          <input 
+          <input
+          name='email' 
           type='email' 
           id='email' 
           onChange={emailChangeHandler}  
@@ -103,7 +129,7 @@ const ContactUs = (props) => {
           <textarea className='text-area' 
           type='text' 
           id='description'
-          maxlength='500' 
+          maxLength='500' 
           onChange={descriptionChangeHandler}  
           value={enteredDescription}
           onBlur={descriptionBlurHandler} 
