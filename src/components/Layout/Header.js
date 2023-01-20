@@ -15,6 +15,7 @@ const NewHeader = () => {
 
   const handleSignupClose = () => setShowSignup(false);
   const handleSignupShow = () => setShowSignup(true);
+  //return header on every page
   return (
     <>
       <Navbar bg="dark" variant="dark" expand="lg">

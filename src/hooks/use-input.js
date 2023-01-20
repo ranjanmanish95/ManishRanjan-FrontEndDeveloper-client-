@@ -1,5 +1,6 @@
 import { useState } from "react";
 const useInput = (validateValue) => {
+  //custom hooks for forms
   const [enteredValue, setEnteredValue] = useState("");
   const [isTouched, setIsTouched] = useState(false);
 

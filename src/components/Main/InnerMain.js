@@ -3,6 +3,7 @@ import spaceX from "../../assets/image.jpg";
 import classes from "./InnerMain.module.css";
 
 const InnerMain = () => {
+  //return inner header background on legacy data section
   return (
     <Fragment>
       <div className={classes["inner-main"]}>

@@ -1,6 +1,7 @@
 import classes from "./ContactUs.module.css";
 import useInput from "../../hooks/use-input";
 const ContactUs = (props) => {
+  //import resuable functions and variables from custom hook useInput
   const {
     value: enteredName,
     isValid: enteredNameIsValid,
@@ -66,7 +67,7 @@ const ContactUs = (props) => {
       company: enteredCompany,
       details: enteredDescription
     };
-
+    //post signup on submit
     fetch("http://localhost:8001/contact", {
       method: "POST",
       headers: {
@@ -84,7 +85,7 @@ const ContactUs = (props) => {
       .catch((e) => {
         alert(e);
       });
-
+    //reset the contact-form fields to empty once data is submitted
     nameReset();
     emailReset();
     companyReset();

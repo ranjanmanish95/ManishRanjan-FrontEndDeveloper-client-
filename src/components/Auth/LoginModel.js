@@ -3,6 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import useInput from "../../hooks/use-input";
 
 const LoginModal = (props) => {
+  //import resuable functions and variables from custom hook useInput
   const {
     value: enteredEmail,
     isValid: enteredEmailIsValid,
@@ -38,7 +39,7 @@ const LoginModal = (props) => {
       email: enteredEmail,
       password: enteredPassword
     };
-
+    //post login on submit
     fetch("http://localhost:8001/users/login", {
       method: "POST",
       headers: {
@@ -51,11 +52,10 @@ const LoginModal = (props) => {
         return res.json();
       })
       .then((data) => {
-        // console.log(data.token);
         localStorage.setItem("loginToken", data.token);
         console.log(localStorage.getItem("loginToken"));
       });
-
+    //reset the login fields to empty once data is submitted
     emailReset();
     passwordReset();
   };

@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import classes from "./Footer.module.css";
+//return footer on every page
 const footer = () => {
   return (
     <Fragment>

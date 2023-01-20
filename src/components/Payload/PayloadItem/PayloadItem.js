@@ -2,6 +2,7 @@ import classes from "./PayloadItem.module.css";
 
 const PayloadItem = (props) => {
   const payload = props.payload;
+  //return individual link for payload
   return payload.map((item) => (
     <li className={classes.item}>
       <div>

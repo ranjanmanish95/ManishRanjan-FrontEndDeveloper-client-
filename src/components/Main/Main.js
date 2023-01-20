@@ -3,6 +3,7 @@ import banner from "../../assets/banner1.jpg";
 import classes from "./Main.module.css";
 
 const Main = () => {
+  //return header component for our main landing page
   return (
     <Fragment>
       <div className={classes.main}>

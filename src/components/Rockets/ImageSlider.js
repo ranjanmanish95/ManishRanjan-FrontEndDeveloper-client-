@@ -62,19 +62,19 @@ const ImageSlider = ({ slides }) => {
     fontSize: "100px",
     color: "#fff"
   };
-
+  //will navigate to previous rocket slide
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
-
+  //will navigate to next rocket slide
   const goToNext = () => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
-
+  //will navigate to slide with the current index set in slides object prop
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };

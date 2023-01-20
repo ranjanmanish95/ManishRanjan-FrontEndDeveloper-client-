@@ -3,6 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import useInput from "../../hooks/use-input";
 
 const SignupModal = (props) => {
+  //import resuable functions and variables from custom hook useInput
   const {
     value: enteredEmail,
     isValid: enteredEmailIsValid,
@@ -51,7 +52,7 @@ const SignupModal = (props) => {
       password: enteredPassword,
       company: enteredCompany
     };
-
+    //post signup on submit
     fetch("http://localhost:8001/users", {
       method: "POST",
       headers: {
@@ -66,7 +67,7 @@ const SignupModal = (props) => {
         alert("User already exists");
       }
     });
-
+    //reset the signup fields to empty once data is submitted
     emailReset();
     passwordReset();
     companyReset();

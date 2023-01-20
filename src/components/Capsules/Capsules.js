@@ -11,6 +11,7 @@ const CapsuleList = (props) => {
   const [dataPerPage] = useState(10);
 
   useEffect(() => {
+    //fetch the capsules data with query parameter set
     const fetchUsers = async () => {
       const response = await fetch(`http://localhost:8001/capsules?q=${query}`);
       const data = await response.json();

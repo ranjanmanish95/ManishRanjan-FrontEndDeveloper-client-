@@ -1,6 +1,7 @@
 import classes from "./CapsuleItem.module.css";
 const CapsuleItem = (props) => {
   const capsule = props.capsule;
+  //return capsule table
   return (
     <>
       <table className={classes.table}>
