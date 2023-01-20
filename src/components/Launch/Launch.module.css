@@ -1,67 +1,65 @@
-
-.heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10rem;
-    min-height: 100%;
-    margin-top: 5%;
-    color: #fff;
-    animation: spaceX-launchbutton 2s ease-out forwards;
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  min-height: 100%;
+  margin-top: 5%;
+  color: #fff;
+  animation: spaceX-launchbutton 2s ease-out forwards;
 }
 
-.launchbuttondiv{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    height: 10rem;
-    animation: spaceX-launchbutton 2s ease-out forwards;
+.launchbuttondiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 10rem;
+  animation: spaceX-launchbutton 2s ease-out forwards;
 }
 
-.launchbutton{
-    width: 12rem;
-    height: 3rem;
-    border-radius: 20px;
-    background-color: rgb(5, 30, 170);
-    color: #fff;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    border: none;
+.launchbutton {
+  width: 12rem;
+  height: 3rem;
+  border-radius: 20px;
+  background-color: rgb(5, 30, 170);
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: none;
 }
 
 .launchbutton button:hover,
-.launchbutton button:active
-{
-    background-color: rgb(3, 17, 111);
-    border: none;
-    color: #fff;
+.launchbutton button:active {
+  background-color: rgb(3, 17, 111);
+  border: none;
+  color: #fff;
 }
 
-@keyframes spaceX-launchbutton{
-    from {
-      opacity: 0;
-      transform: translateY(3rem);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateY(0rem);
-    }
+@keyframes spaceX-launchbutton {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
   }
 
-  @keyframes spaceX-heading{
-    from {
-      opacity: 0;
-      transform: translateY(3rem);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateY(0rem);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
   }
+}
+
+@keyframes spaceX-heading {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}

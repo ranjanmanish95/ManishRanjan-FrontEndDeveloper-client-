@@ -7,18 +7,16 @@
   margin: 3rem auto;
   border: 1px solid rgb(230, 226, 226);
   animation: contact-appear 1s ease-out forwards;
+}
+
+@keyframes contact-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
   }
 
-  @keyframes contact-appear {
-    from {
-      opacity: 0;
-      transform: translateY(3rem);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateY(0rem);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
   }
-
-  
+}

@@ -1,10 +1,10 @@
-.search{
+.search {
   width: 20rem;
   position: fixed;
   top: 20%;
   background-color: #fff;
   padding: 1% 0%;
-  color:#000;
+  color: #000;
   border-radius: 40px;
   border: none;
   text-align: center;
@@ -14,26 +14,26 @@
 }
 
 .list {
-    max-width: 100rem;
-    width: 90%;
-    margin: 15rem auto;
-    animation: meals-appear 1s ease-out forwards;
+  max-width: 100rem;
+  width: 90%;
+  margin: 15rem auto;
+  animation: meals-appear 1s ease-out forwards;
+}
+
+.list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
   }
-  
-  .list ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
   }
-  
-  @keyframes meals-appear {
-    from {
-      opacity: 0;
-      transform: translateY(3rem);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateY(0rem);
-    }
-  }
+}

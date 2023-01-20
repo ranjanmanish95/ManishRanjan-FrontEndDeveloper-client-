@@ -1,13 +1,13 @@
- .containerStyles  {
-    width: 600px;
-    height: 380px;
-    margin: '0 auto';
-    padding-top: 2rem
+.containerStyles {
+  width: 600px;
+  height: 380px;
+  margin: "0 auto";
+  padding-top: 2rem;
 }
 
 @media screen and (max-width: 991px) and (min-width: 368px) {
-    .containerStyles{
-        width: 350px;
-        height: 380px;
-    }
+  .containerStyles {
+    width: 350px;
+    height: 380px;
+  }
 }

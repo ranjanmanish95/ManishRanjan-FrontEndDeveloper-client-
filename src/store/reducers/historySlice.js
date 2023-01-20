@@ -1,43 +1,43 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import axios from "axios";
 
-export const getHistoryData = createAsyncThunk('history/getData', async (arg,{
-  rejectWithValue
-})=>{
-  try{
-  const {data} = await axios.get('http://localhost:8001/history');
-  return data;
-  } catch(error){
-    rejectWithValue(error.response.data);
+export const getHistoryData = createAsyncThunk(
+  "history/getData",
+  async (arg, { rejectWithValue }) => {
+    try {
+      const { data } = await axios.get("http://localhost:8001/history");
+      return data;
+    } catch (error) {
+      rejectWithValue(error.response.data);
+    }
   }
-})
+);
 
 const historySlice = createSlice({
-  name: 'history',
-  initialState: { 
-    spaceXHistory: [], 
+  name: "history",
+  initialState: {
+    spaceXHistory: [],
     isSuccess: false,
-    message: '',
+    message: "",
     loading: false
   },
-   reducers: {},
-   extraReducers:{
-    [getHistoryData.pending]: (state, {payload}) =>{
+  reducers: {},
+  extraReducers: {
+    [getHistoryData.pending]: (state, { payload }) => {
       state.loading = true;
     },
-    [getHistoryData.fulfilled]: (state, {payload}) =>{
+    [getHistoryData.fulfilled]: (state, { payload }) => {
       state.loading = true;
       state.spaceXHistory = payload;
       state.isSuccess = true;
     },
-    [getHistoryData.pending]: (state, {payload}) =>{
+    [getHistoryData.pending]: (state, { payload }) => {
       state.message = payload;
       state.loading = false;
       state.isSuccess = false;
     }
-   }
-  },
-);
+  }
+});
 
 // export const historyActions = historySlice.actions;
 

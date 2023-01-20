@@ -4,13 +4,13 @@ import InnerMain from "../Main/InnerMain";
 import Summary from "./Summary";
 import Footer from "../Layout/Footer";
 
-const History =()=>{
-return(
+const History = () => {
+  return (
     <Fragment>
-        <Summary/>
-        <HistoryList/>
+      <Summary />
+      <HistoryList />
     </Fragment>
-)
-}
+  );
+};
 
 export default History;

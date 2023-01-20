@@ -4,13 +4,13 @@ import PayloadSummary from "./PayloadSummary";
 import InnerMain from "../Main/InnerMain";
 import Footer from "../Layout/Footer";
 
-const Payload =()=>{
-return(
+const Payload = () => {
+  return (
     <Fragment>
-        <PayloadSummary/>
-        <PayloadList/>
+      <PayloadSummary />
+      <PayloadList />
     </Fragment>
-)
-}
+  );
+};
 
 export default Payload;
